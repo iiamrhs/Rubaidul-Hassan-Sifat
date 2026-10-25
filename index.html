@@ -302,48 +302,53 @@ footer { padding:28px 0; border-top:1px solid var(--line); color:var(--muted); f
 }
 .social-link:hover { transform:translateY(-2px); border-color:var(--site-primary); }
 .social-icon {
-  width:34px;
-  height:34px;
-  flex:0 0 34px;
-  display:grid;
-  place-items:center;
-  border-radius:10px;
-  background:#f1f3f5;
-  font-size:0;
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:22px 22px;
+  width: 34px !important;
+  height: 34px !important;
+  flex: 0 0 34px !important;
+  display: grid !important;
+  place-items: center !important;
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 22px 22px !important;
+  font-size: 0 !important;
 }
-.social-icon svg { display:none; }
-.social-icon.brand-icon svg { width:22px; height:22px; fill:currentColor; }
-.social-icon.whatsapp { color:#25D366; }
-.social-icon.gmail { color:#EA4335; }
-.social-icon.instagram { color:#E4405F; }
-.social-icon.linkedin { color:#0A66C2; }
-.social-icon.telegram { color:#229ED9; }
-.social-icon.x-brand { color:#111111; }
-.social-icon.github { color:#24292f; }
-.social-icon.tiktok { color:#111111; }
-.social-icon.pinterest { color:#BD081C; }
-.social-icon.threads { color:#111111; }
-.social-icon.facebook { color:#0866FF; }
-.social-icon.youtube { color:#FF0033; }
-.social-icon.snapchat { color:#111111; }
-.social-icon.reddit { color:#FF4500; }
-.social-icon.quora { color:#B92B27; }
-.social-icon.discord { color:#5865F2; }
-.social-icon.twitch { color:#9146FF; }
-.social-icon.spotify { color:#1DB954; }
-.social-icon.roblox { color:#111111; }
-.social-icon.behance { color:#1769FF; }
-.social-icon.snapchat { background-color:#fff4b8; }
-.social-icon.reddit { background-color:#fff0e9; }
-.social-icon.quora { background-color:#fff0f0; }
-.social-icon.discord { background-color:#eef0ff; }
-.social-icon.twitch { background-color:#f4edff; }
-.social-icon.spotify { background-color:#e9fff0; }
-.social-icon.roblox { background-color:#f1f1f1; }
-.social-icon.behance { background-color:#edf3ff; }
+
+.social-icon svg {
+  display: block !important;
+  width: 22px !important;
+  height: 22px !important;
+  fill: currentColor !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* LinkedIn brand icon */
+.social-icon.linkedin {
+  color: #0A66C2 !important;
+  background-color: #f1f3f5 !important;
+}
+
+/* Other social brand colours */
+.social-icon.facebook { color: #0866FF !important; }
+.social-icon.whatsapp { color: #25D366 !important; }
+.social-icon.gmail { color: #EA4335 !important; }
+.social-icon.instagram { color: #E4405F !important; }
+.social-icon.telegram { color: #229ED9 !important; }
+.social-icon.x-brand { color: #111111 !important; }
+.social-icon.github { color: #24292F !important; }
+.social-icon.youtube { color: #FF0033 !important; }
+.social-icon.threads { color: #111111 !important; }
+.social-icon.tiktok { color: #111111 !important; }
+.social-icon.pinterest { color: #BD081C !important; }
+.social-icon.snapchat { color: #111111 !important; }
+.social-icon.reddit { color: #FF4500 !important; }
+.social-icon.quora { color: #B92B27 !important; }
+.social-icon.discord { color: #5865F2 !important; }
+.social-icon.twitch { color: #9146FF !important; }
+.social-icon.spotify { color: #1DB954 !important; }
+.social-icon.roblox { color: #111111 !important; }
+.social-icon.behance { color: #1769FF !important; }
 
 .social-icon.facebook { background-image:url('https://cdn.simpleicons.org/facebook/0866FF'); }
 .social-icon.instagram { background-image:url('https://cdn.simpleicons.org/instagram/E4405F'); }
