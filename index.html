@@ -328,6 +328,38 @@
     }
 
     .skill,
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .gallery-item {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--surface);
+    }
+
+    .gallery-item a { display: block; }
+
+    .gallery-item img {
+      display: block;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform .25s ease;
+    }
+
+    .gallery-item:hover img { transform: scale(1.04); }
+
+    .gallery-item figcaption {
+      padding: 13px 15px;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
     .project {
       padding: 22px;
       border: 1px solid var(--line);
@@ -603,6 +635,7 @@
           <a href="#details">My Details</a>
           <a href="#skills">Interests</a>
           <a href="#projects">Projects</a>
+          <a href="#gallery">My Gallery</a>
           <a href="#contact">Contact</a>
         </nav>
 
@@ -783,6 +816,37 @@
               <p>Find my profiles across social platforms in the contact section below.</p>
               <p><a href="#contact">View social links ↗</a></p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="soft" id="gallery">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="kicker">My Photos</div>
+            <h2>My Gallery</h2>
+            <p>A collection of my personal photos and memorable moments.</p>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-item">
+              <a href="gallery-01.jpg" target="_blank" rel="noopener">
+                <img src="gallery-01.jpg" alt="My photo 1" loading="lazy">
+              </a>
+              <figcaption>My Photo 1</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a href="gallery-02.jpg" target="_blank" rel="noopener">
+                <img src="gallery-02.jpg" alt="My photo 2" loading="lazy">
+              </a>
+              <figcaption>My Photo 2</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a href="gallery-03.jpg" target="_blank" rel="noopener">
+                <img src="gallery-03.jpg" alt="My photo 3" loading="lazy">
+              </a>
+              <figcaption>My Photo 3</figcaption>
+            </figure>
           </div>
         </div>
       </section>
